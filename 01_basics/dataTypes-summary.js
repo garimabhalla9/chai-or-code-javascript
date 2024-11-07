@@ -37,3 +37,38 @@ console.log(typeof outsideTemp);
 //link to read datatype docs
 // https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html
 
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+//Stack is used in(primitive type), Heap is used in(non-primitive type)
+// when stack memory is used, then we get a copy of variable.
+// when object/memory is defined, we get a reference which means if we change something it will change into original value.
+
+
+//stack
+let myYoutubename = "garimadotcom"
+
+let anothername = myYoutubename
+anothername="chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+
+//heap
+let userOne = {
+    email:"user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "garima@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
